@@ -35,9 +35,19 @@ class Home extends React.Component {
     return (
       <div style={{ margin: '20px 40px' }}>
         <Button.Group style={{ margin: '20px 0' }}>
-          <Button color={this.state.column === 'customers.name' ? 'blue' : 'grey'} onClick={() => this.handleChange('customers.name')}>Customer</Button>
+          <Button
+            color={this.state.column === 'customers.name' ? 'blue' : 'grey'}
+            onClick={() => this.handleChange('customers.name')}
+          >
+            Customer
+          </Button>
           <Button.Or />
-          <Button color={this.state.column === 'books.title' ? 'blue' : 'grey'} onClick={() => this.handleChange('books.title')}>Book</Button>
+          <Button
+            color={this.state.column === 'books.title' ? 'blue' : 'grey'}
+            onClick={() => this.handleChange('books.title')}
+          >
+            Book
+          </Button>
         </Button.Group>
         <Search searchName={this.searchName} />
         <Table celled>
