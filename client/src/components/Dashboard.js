@@ -11,7 +11,7 @@ const Dashboard = () => {
         <GenreChart />
         <MonthlyRentalTrendChart />
       </div>
-      <div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <YearlyRentalTrendChart />
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
